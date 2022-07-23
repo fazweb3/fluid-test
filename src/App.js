@@ -61,7 +61,7 @@ export default class App extends Component {
               textShadow: "2px 2px 8px rgba(0, 0, 0, 0.5)"
             }}
           >
-           <img src='/img/logoPengSol.png' height={150} width={350} />
+           <img src='/img/logoPengSol.png' height={85} width={269} />
           </h1>
         </div>
 

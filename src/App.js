@@ -31,10 +31,7 @@ export default class App extends Component {
   render() {
     const { config } = this.state;      
 
-    if (typeof window == 'undefined'){
-      window.onunload = function(){ window.scrollTo(0,0); }
-    }
-
+    
     return (
       <div
         style={{

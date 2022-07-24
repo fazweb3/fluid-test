@@ -6,8 +6,19 @@ body {
   overscroll-behavior-y: contain;
   height: 100vh;
   width: 100vw;
+  overflow:'hidden'
 }
 
 html {
     overscroll-behavior-y: contain;
+}
+
+canvas[resize] {
+  -webkit-transform: translate3d(0, 0, 0);
+  width: 100%;
+  height: 115%; 
+  position: fixed;
+  left: 0; top: 0;
+  pointer-events: none;
+  background: black;
 }

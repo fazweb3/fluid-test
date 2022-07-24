@@ -39,6 +39,8 @@ export default class App extends Component {
       <div
         style={{
           height: "100vh",
+          position:'fixed',
+          inset:'0px'
         }}
       >
         <FluidAnimation config={config} animationRef={this._animationRef} />

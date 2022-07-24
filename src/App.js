@@ -31,16 +31,17 @@ export default class App extends Component {
   render() {
     const { config } = this.state;      
 
-    
+
     return (
       <div
         style={{
           height: "100vh",
           position:'fixed',
-          inset:'0px'
+          inset:'0px',
+          overscrollBehaviorY:'contain'
         }}
       >
-        <FluidAnimation config={config} animationRef={this._animationRef} />
+        <FluidAnimation config={config} animationRef={this._animationRef}  />
 
         <div
           style={{

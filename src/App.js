@@ -26,13 +26,19 @@ export default class App extends Component {
     this._reset();
   }
 
+  
+
   render() {
-    const { config } = this.state;
+    const { config } = this.state;      
+
+    if (typeof window == 'undefined'){
+      window.onunload = function(){ window.scrollTo(0,0); }
+    }
 
     return (
       <div
         style={{
-          height: "100vh"
+          height: "100vh",
         }}
       >
         <FluidAnimation config={config} animationRef={this._animationRef} />

@@ -4,13 +4,14 @@ body {
   font-family: sans-serif;
   
   overscroll-behavior-y: contain;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   overflow:'hidden'
 }
 
 html {
     overscroll-behavior-y: contain;
+    height:100%;
 }
 
 canvas[resize] {
